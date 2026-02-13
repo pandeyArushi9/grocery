@@ -1,5 +1,24 @@
 .items {
-  margin-top: 2rem;
-  display: grid;
-  row-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.single-item {
+  display: flex;
+  align-items: center;
+  background: rgb(106, 197, 213);
+  padding: 0.8rem;
+  margin-bottom: 0.6rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.single-item p {
+  flex: 1;
+  margin: 0 0.5rem;
+  font-weight: 500;
+}
+
+.single-item p.completed {
+  text-decoration: line-through;
+  color: gray;
 }
