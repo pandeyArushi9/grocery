@@ -1,25 +1,32 @@
-*,
-::after,
-::before {
+:root {
+  --primary-color: #79a9e0;
+  --highlight-color: #accaf4;
+}
+body {
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  min-height: 100vh;
 
-body {
-  background: #eee;
-  font-family: Helvetica, sans-serif;
-  font-weight: 400;
-  line-height: 1.2;
-  color: #222;
+  /* Background image */
+  background-image: url("gro.jpeg"); /* replace with your photo path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Overlay tint for readability */
+  background-color: rgba(225, 222, 222, 0.6);
+  background-blend-mode: lighten;
+  color: #2e2e2e; /* softer dark gray */
 }
 
 .section-center {
   margin: 0 auto;
   margin-top: 8rem;
   max-width: 30rem;
-  background: #fff;
-  border-radius: 0.25rem;
+  background: #f1eeee; /* clean white card */
+  border-radius: 0.75rem;
   padding: 2rem;
   position: relative;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
